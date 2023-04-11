@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <head>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <link href="plate_size.css" rel="stylesheet">
+            <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/js/bootstrap.min.js"></script>
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.4/css/bootstrap.min.css"
+                  rel="stylesheet" />
+                  
+      </head>
+
+<body>
+<div id="whole">
+      <header>
+            <!--header part-->
+            <div class="container-fluid">
+                  <div id="header">
+                        <div class="col-md-12">
+                              <a class="navbar-brand" href="#">
+                                    <img src="E:\Final Project\Final Project\images\logo.png" alt="logo" />
+                              </a>
+                        </div>
+                  </div>
+
+            </div>
+      </header><br><br><br>
+
+      <h2 class="there">Almost there!</h2>
+      <div class="breadcrumb">
+
+
+            18th August 2022, 11 am - 12.00 pm, Rattha Group...<span class="line"> &nbsp; &nbsp; | &nbsp; &nbsp; </span>
+            25 Guests <span class="line"> &nbsp; &nbsp; | &nbsp; &nbsp; </span> Veg & Non-Veg </div>
+
+      <div class="container">
+            <div class="row">
+
+                  <div id="orange">
+                        <img src="./images/Group.png" class="grp" alt="Image is not displayed">
+                        <h3 class="platesize">What will be the Plate size?</h3><br>
+                  </div>
+                  <div class="col">
+                        <div class="card" data-bs-toggle="collapse" data-bs-target="#allergy" onclick="enable()"
+                              id="enable">
+                              <div class="card-body">
+                                    <p class="card-title">Small</p>
+                                    <p class="card-text">1 starter + 1 curry + 1 bread + white rice + 1 dessert
+                                    </p>
+                              </div>
+                              <div class="card-footer" id="cf">
+                                    <p class="card-text">*Veg only:$10/plate<br>Regular:$12/plate</p>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="col">
+                        <div class="card" data-bs-toggle="collapse" data-bs-target="#allergy" onclick="enable()">
+                              <div class="card-body">
+                                    <p class="card-title">Medium</p>
+                                    <p class="card-text">2 starter + 1 curry + 1 bread + white rice + 1 dessert +
+                                          1
+                                          watter bottle or soda</p>
+                              </div>
+                              <div class="card-footer" id="cf">
+                                    <p class="card-text">*Veg only:$12/plate<br>Regular:$14/plate</p>
+                              </div>
+
+
+                        </div>
+                  </div>
+                  <div class="col">
+                        <div class="card" data-bs-toggle="collapse" data-bs-target="#allergy" onclick="enable()">
+                              <div class="card-body">
+                                    <p class="card-title">Large</p>
+                                    <p class="card-text">2 types of starters + 2 types of curries + 1 bread + 1
+                                          type of
+                                          variety rice or chapathi + white rice + 1 dessert + 1 water bottle or
+                                          soda</p>
+                              </div>
+                              <div class="card-footer" id="cf">
+                                    <p class="card-text">*Veg only:$14/plate<br>Regular:$16/plate</p>
+                              </div>
+
+
+                        </div>
+                  </div>
+                  <div class="col">
+                        <div class="card" data-bs-toggle="collapse" data-bs-target="#allergy" onclick="enable()">
+                              <div class="card-body">
+                                    <p class="card-title">Grand Plate</p>
+                                    <p class="card-text">2 types of starters + 2 types of curries + 2 types of
+                                          bread + 1
+                                          Biriyani + white rice + 2 desserts + 1 water bottle or soda</p>
+                              </div>
+                              <div class="card-footer" id="cf">
+                                    <p class="card-text">*Veg only:$16/plate<br>Regular:$18/plate</p>
+                              </div>
+
+
+                        </div>
+                  </div>
+
+                  <div class="col-md">
+                        <div class="card" data-bs-toggle="collapse" data-bs-target="#allergy " onclick="enable()">
+                              <div class="card-body">
+                                    <p class="card-title">Custom Plate</p>
+                                    <img src="./images/Vector.png" class="vector" alt="Image is not found">
+                              </div>
+                              <div class="card-footer" id="cf">
+                                    <p class="card-text">*Minimum spend of $1000</p>
+                              </div>
+
+
+                        </div>
+                  </div>
+
+                  <div>
+                        <img src="./images/allergyimg.png" class="collapse" id="foodallergyimg"
+                              alt="Image is not found">
+
+                        <h3 id="allergy" class="collapse"> Are you allergic to any food?</h3><br>
+                  </div>
+                  <div id="allergy" class="collapse">
+                        <input type="radio" id="yes" value="" name="same" onclick="yesFunction()">
+                        <label for="allergic">Yes</label>
+                        <input type="radio" id="no" value="" name="same" onclick="noFunction()">
+                        <label for="allergic">No</label><br><br>
+
+
+                  </div>
+            </div>
+            <div class="store">
+                  <p id="storage"></p>
+            </div>
+            <div class="foot">
+                  <img src="E:\Final Project\Final Project\images\bg2.png" class="botimg">
+                  <button type="button" class="btn" id="backbtn">&#60; Back</button>
+                  <div class="progress">
+                        <div class="progress-bar " style="width: 60%;"></div>
+
+                  </div>
+                  <h6>60%</h6>
+                  <a href="dummy.html">
+                        <button type="button" disabled="disabled" class="btn" id="btn1">Continue &#62;</button>
+                  </a>
+            </div>
+      </div>
+
+</div>
+
+
+      <!-- modal 
+      <div id="modal">
+            <div id="myModalLabel">
+
+                  <div>
+                        <a href="plate_size.html" id="close"></a>
+
+                  </div>
+                  <h3 class="modal-title">Choose Your Allergies</h3>
+            </div>
+
+            <div class="form">
+                  <table>
+                        <tr>
+                              <div class="lform">
+                                    <td>
+                                          <div>
+
+                                                <input class="form-check-input" type="checkbox" value="Peanut" id="t1">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                      Peanut
+                                                </label>
+                                          </div>
+                                    </td>
+                                    <td>
+                                    <td>
+                                          <div><input class="form-check-input" type="checkbox" value="Eggs" id="t2">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                      Eggs
+                                                </label>
+                                          </div>
+                              </div>
+                              </td>
+                        </tr>
+                        <tr>
+                              <div class="lform">
+                                    <div><input class="form-check-input" type="checkbox" value="Wheat" id="t3">
+                                          <label class="form-check-label" for="flexCheckDefault">
+                                                Wheat
+                                          </label>
+                                    </div>
+                                    <div><input class="form-check-input" type="checkbox" value="Sesame" id="t4">
+                                          <label class="form-check-label" for="flexCheckDefault">
+                                                Sesame
+                                          </label>
+                                    </div>
+                              </div>
+                        </tr>
+                        <tr>
+                              <div class="lform">
+                                    <div><input class="form-check-input" type="checkbox" value="Soy" id="t5">
+                                          <label class="form-check-label" for="flexCheckDefault">
+                                                Soy
+                                          </label>
+                                    </div>
+                                    <div><input class="form-check-input" type="checkbox" value="Gluten" id="t6">
+                                          <label class="form-check-label" for="flexCheckDefault">
+                                                Gluten
+                                          </label>
+                                    </div>
+                              </div>
+                        </tr>
+                        <tr>
+                              <div class="lform">
+                                    <div><input class="form-check-input" type="checkbox" value="Milk" id="t7">
+                                          <label class="form-check-label" for="flexCheckDefault">
+                                                Milk
+                                          </label>
+                                    </div>
+                                    <div><input class="form-check-input" type="checkbox" value="Meat" id="t8">
+                                          <label class="form-check-label" for="flexCheckDefault">
+                                                Meat
+                                          </label>
+                                    </div>
+                              </div>
+                        </tr>
+                        <tr>
+                              <div class="lform">
+                                    <div><input class="form-check-input" type="checkbox" value="Tree nuts" id="t9">
+                                          <label class="form-check-label" for="flexCheckDefault">
+                                                Tree nuts
+                                          </label>
+                                    </div>
+                                    <div><input class="form-check-input" type="checkbox" value="Shellfish" id="t10">
+                                          <label class="form-check-label" for="flexCheckDefault">
+                                                Shellfish
+                                          </label>
+                                    </div>
+                              </div>
+
+
+                              <div><label for="others">Others</label><br>
+                                    <textarea id="others" rows="4" cols="50">
+
+                                          </textarea>
+                              </div>
+
+                  </table>
+                  <div>
+                        <button type="button" id="cancelbtn" onclick="cancel()">Cancel</button>
+                        <button type="button" id="savebtn" onclick="f1()"> Save </a> </button>
+                  </div>
+            </div>
+      </div>-->
+
+      <div id="modal">
+            <div class="px-4 modal-title" >
+                  <h4 class="px-5 pt-4" ><span id="allhead">Choose Your Allergies</span> <span><a href="plate_size.html" id="close"></a></span></h4>
+            </div>
+            <div class="px-5 py-5  " >
+                  <table class="td1" >
+                        <tr >
+                              <td><p class="px-5"><input type="checkbox" name="" id="" ><sapn class="px-3" id="t1">Peanut</sapn></p></td>
+                              <td><p class="px-5"><input type="checkbox" name="" id=""><sapn class="px-3" id="t2">Eggs</sapn></p></td>                        
+                        </tr>
+                        <tr>
+                              <td><p class="px-5"><input type="checkbox" name="" id=""><sapn class="px-3" id="t3">Wheat</sapn></p></td>     
+                              <td><p class="px-5"><input type="checkbox" name="" id=""><sapn class="px-3" id="t4">Sesame</sapn></p></td>                        
+                        </tr>
+                        <tr>
+                              <td><p class="px-5"><input type="checkbox" name="" id=""><sapn class="px-3" id="t5">Soy</sapn></p></td>
+                              <td><p class="px-5"><input type="checkbox" name="" id=""><sapn class="px-3" id="t6">Gluten</sapn></p></td>                        
+                        </tr>
+                        <tr>
+                              <td><p class="px-5"><input type="checkbox" name="" id=""><sapn class="px-3" id="t7">Milk</sapn></p></td>
+                              <td><p class="px-5"><input type="checkbox" name="" id=""><sapn class="px-3" id="t8">Meat</sapn></p></td>                        
+                        </tr>
+                        <tr>
+                              <td><p class="px-5"><input type="checkbox" name="" id=""><sapn class="px-3" id="t9">Tree nuts</sapn></p></td>
+                              <td><p class="px-5"><input type="checkbox" name="" id=""><sapn class="px-3" id="t10">Shellfish</sapn></p></td>                        
+                        </tr>
+                  </table>
+           
+            <div class="px-5 py-4">Others<br>
+                  <textarea name="" id="" cols="70" rows="5"></textarea>
+                  
+            </div>
+    
+            <div class="float-end px-3 py-3">
+                  <input type="button"  id="cancelbtn" onclick="cancel()" value="Cancel" class="px-3">
+                  <input type="button" id="savebtn" onclick="f1()" value="Save">
+                 
+            </div>  </div>
+      </div>
+
+
+
+
+
+
+
+      
+
+</body>
+<script>
+      function yesFunction() {
+            document.getElementById("modal").style.display = "block";
+            document.getElementById("whole").style.opacity = "0.3";
+
+
+      }
+      function noFunction() {
+            document.getElementById("modal").style.display = "none";
+      }
+
+
+      function enable() {
+            document.getElementById("btn1").disabled = false;
+            document.getElementById('btn1').style.backgroundColor = '#FF6D00';      }
+      function cancel() {
+            window.location.href = "plate_size.html"
+      }
+
+      function f1() {
+            window.location.href = "plate_size.html"}
+
+            // sessionStorage.setItem('N1',
+            //       document.getElementById("t1").value);
+            // sessionStorage.setItem('N2',
+            //       document.getElementById("t2").value);
+            // sessionStorage.setItem('N3',
+            //       document.getElementById("t3").value);
+            // sessionStorage.setItem('N4',
+            //       document.getElementById("t4").value);
+            // sessionStorage.setItem('N5',
+            //       document.getElementById("t5").value);
+            // sessionStorage.setItem('N6',
+            //       document.getElementById("t6").value);
+            // sessionStorage.setItem('N7',
+            //       document.getElementById("t7").value);
+            // sessionStorage.setItem('N8',
+            //       document.getElementById("t8").value);
+            // sessionStorage.setItem('N9',
+            //       document.getElementById("t9").value);
+            // sessionStorage.setItem('N10',
+            //       document.getElementById("t10").value);
+            
+
+
+            // var al = "";
+            // for (var i = 1; i<=2; i++)
+            // {
+                  
+            //       al = al +  
+            // }
+
+
+      //       document.getElementById("modal").style.display = "none";
+      //             // document.getElementById("storage").innerHTML = sessionStorage.getItem( "N1", +  "N2", + "N3", + "N4", + "N5", + "N6", "N7", + "N8", + "N9", + "N10");
+      //             document.getElementById("whole").style.opacity = "1.0";
+
+
+
+      // }
+
+
+
+
+</script>
+
+
+
+</html>
